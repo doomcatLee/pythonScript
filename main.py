@@ -39,8 +39,13 @@ for i in range(1,3): #REPLACE 3 WITH YOUR ROW COUNTS
         if (val == ''):
             # replace every empty string with outputString
             itemArray[index] = outputString;
-            f = open('empty.csv','w')
-            f.write('hi there\n')
-            f.close()
+
 
     print(itemArray);
+
+
+with open('empty.csv', 'wb') as csvfile:
+    spamwriter = csv.writer(csvfile, delimiter=' ',
+                            quotechar=',', quoting=csv.QUOTE_MINIMAL)
+    spamwriter.writerow(['Spam'] * 5 + ['Baked Beans'])
+    spamwriter.writerow(['Spam','Lovely Spam','Wonderful Spam'])
