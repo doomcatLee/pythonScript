@@ -44,8 +44,7 @@ for i in range(1,3): #REPLACE 3 WITH YOUR ROW COUNTS
     print(itemArray);
 
 
-with open('empty.csv', 'wb') as csvfile:
-    spamwriter = csv.writer(csvfile, delimiter=' ',
+with open('result.csv', 'wb') as csvfile:
+    spamwriter = csv.writer(csvfile, delimiter=',',
                             quotechar=',', quoting=csv.QUOTE_MINIMAL)
-    spamwriter.writerow(['Spam'] * 5 + ['Baked Beans'])
-    spamwriter.writerow(['Spam','Lovely Spam','Wonderful Spam'])
+    spamwriter.writerow(itemArray)

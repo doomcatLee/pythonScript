@@ -1,10 +1,11 @@
 
-
-## Warning
-You can't have whitespaces in your csv file, otherwise the code logic needs to be replaced.
-
-
 # Configuring this script with your csv file.
 
-1. Record the number of rows in your csv file and replace the number in the for loop -> "for i in range(1,3):"
-2. 
+**Record the number of rows in your csv file and replace the number in the for loop -> "for i in range(1,3):"**
+
+
+# To Run
+
+1. Clone this repository ``` git clone https://github.com/doomcatlee/pythonScript ```
+2. Run main.py  ``` python main.py ```
+3. Returns output.csv
